@@ -1,0 +1,19 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python Cache & Byte-compiled files
+__pycache__/
+*.pyc
+
+# Project Data & Outputs (ไฟล์ที่ระบบสร้างขึ้นมาใหม่เรื่อยๆ หรือมีขนาดใหญ่)
+runs/
+logs/
+datasets/
+datasets_ready/
+classes.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db

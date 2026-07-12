@@ -1,0 +1,420 @@
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:43:47
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.15
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:43:55
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.05
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:50:44
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.1
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:50:59
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.05
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:51:01
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.0
+============================================================
+[2026-04-08 09:51:03.328] พบ 293 วัตถุ:
+  [1] Class: good            | Conf: 0.01 | BBox: (93,210) → (208,479)
+  [2] Class: good            | Conf: 0.01 | BBox: (577,444) → (640,479)
+  [3] Class: good            | Conf: 0.01 | BBox: (417,0) → (493,163)
+  [4] Class: good            | Conf: 0.01 | BBox: (579,396) → (640,480)
+  [5] Class: good            | Conf: 0.01 | BBox: (276,0) → (492,189)
+  [6] Class: good            | Conf: 0.01 | BBox: (254,2) → (469,260)
+  [7] Class: bad             | Conf: 0.01 | BBox: (254,0) → (495,253)
+  [8] Class: good            | Conf: 0.01 | BBox: (89,170) → (239,480)
+  [9] Class: good            | Conf: 0.01 | BBox: (0,0) → (160,141)
+  [10] Class: bad             | Conf: 0.01 | BBox: (295,0) → (493,162)
+  [11] Class: bad             | Conf: 0.01 | BBox: (417,0) → (497,161)
+  [12] Class: good            | Conf: 0.01 | BBox: (0,0) → (161,200)
+  [13] Class: good            | Conf: 0.01 | BBox: (521,1) → (640,294)
+  [14] Class: good            | Conf: 0.01 | BBox: (0,0) → (170,89)
+  [15] Class: good            | Conf: 0.01 | BBox: (1,0) → (187,271)
+  [16] Class: good            | Conf: 0.01 | BBox: (29,0) → (470,225)
+  [17] Class: bad             | Conf: 0.01 | BBox: (518,0) → (640,243)
+  [18] Class: good            | Conf: 0.01 | BBox: (142,0) → (417,168)
+  [19] Class: good            | Conf: 0.01 | BBox: (104,0) → (312,155)
+  [20] Class: good            | Conf: 0.01 | BBox: (107,0) → (309,79)
+  [21] Class: good            | Conf: 0.01 | BBox: (146,0) → (390,85)
+  [22] Class: good            | Conf: 0.01 | BBox: (95,0) → (496,148)
+  [23] Class: good            | Conf: 0.01 | BBox: (54,4) → (262,478)
+  [24] Class: good            | Conf: 0.01 | BBox: (303,0) → (640,217)
+  [25] Class: good            | Conf: 0.01 | BBox: (66,0) → (471,117)
+  [26] Class: good            | Conf: 0.01 | BBox: (527,211) → (640,479)
+  [27] Class: good            | Conf: 0.01 | BBox: (533,396) → (640,479)
+  [28] Class: good            | Conf: 0.01 | BBox: (362,322) → (640,480)
+  [29] Class: good            | Conf: 0.01 | BBox: (0,345) → (157,480)
+  [30] Class: good            | Conf: 0.01 | BBox: (29,0) → (315,228)
+  [31] Class: good            | Conf: 0.01 | BBox: (4,0) → (315,81)
+  [32] Class: good            | Conf: 0.01 | BBox: (59,336) → (597,480)
+  [33] Class: good            | Conf: 0.01 | BBox: (589,284) → (640,480)
+  [34] Class: bad             | Conf: 0.01 | BBox: (274,0) → (640,146)
+  [35] Class: good            | Conf: 0.01 | BBox: (0,0) → (255,120)
+  [36] Class: good            | Conf: 0.01 | BBox: (0,234) → (248,480)
+  [37] Class: good            | Conf: 0.01 | BBox: (248,405) → (625,480)
+  [38] Class: good            | Conf: 0.01 | BBox: (0,280) → (146,480)
+  [39] Class: good            | Conf: 0.01 | BBox: (224,326) → (615,480)
+  [40] Class: good            | Conf: 0.01 | BBox: (31,12) → (218,480)
+  [41] Class: bad             | Conf: 0.01 | BBox: (414,0) → (600,167)
+  [42] Class: good            | Conf: 0.01 | BBox: (373,0) → (639,286)
+  [43] Class: good            | Conf: 0.01 | BBox: (1,0) → (187,430)
+  [44] Class: bad             | Conf: 0.01 | BBox: (385,1) → (638,291)
+  [45] Class: good            | Conf: 0.01 | BBox: (285,436) → (628,480)
+  [46] Class: good            | Conf: 0.01 | BBox: (0,332) → (207,480)
+  [47] Class: good            | Conf: 0.01 | BBox: (0,6) → (164,335)
+  [48] Class: bad             | Conf: 0.01 | BBox: (1,1) → (187,470)
+  [49] Class: bad             | Conf: 0.01 | BBox: (3,0) → (603,475)
+  [50] Class: good            | Conf: 0.01 | BBox: (202,0) → (501,347)
+  [51] Class: good            | Conf: 0.01 | BBox: (513,9) → (640,466)
+  [52] Class: bad             | Conf: 0.01 | BBox: (2,0) → (324,475)
+  [53] Class: bad             | Conf: 0.01 | BBox: (166,0) → (638,287)
+  [54] Class: good            | Conf: 0.01 | BBox: (0,49) → (174,477)
+  [55] Class: good            | Conf: 0.01 | BBox: (43,0) → (633,473)
+  [56] Class: good            | Conf: 0.01 | BBox: (304,293) → (640,480)
+  [57] Class: good            | Conf: 0.01 | BBox: (498,77) → (640,476)
+  [58] Class: good            | Conf: 0.01 | BBox: (0,155) → (153,479)
+  [59] Class: good            | Conf: 0.01 | BBox: (27,0) → (489,320)
+  [60] Class: bad             | Conf: 0.01 | BBox: (2,0) → (312,283)
+  [61] Class: good            | Conf: 0.01 | BBox: (49,227) → (464,480)
+  [62] Class: good            | Conf: 0.01 | BBox: (230,269) → (627,480)
+  [63] Class: good            | Conf: 0.01 | BBox: (0,258) → (179,480)
+  [64] Class: bad             | Conf: 0.01 | BBox: (335,441) → (637,480)
+  [65] Class: bad             | Conf: 0.01 | BBox: (301,0) → (639,474)
+  [66] Class: good            | Conf: 0.01 | BBox: (2,103) → (208,479)
+  [67] Class: good            | Conf: 0.01 | BBox: (238,6) → (639,477)
+  [68] Class: bad             | Conf: 0.01 | BBox: (465,255) → (640,479)
+  [69] Class: good            | Conf: 0.01 | BBox: (200,4) → (543,469)
+  [70] Class: good            | Conf: 0.01 | BBox: (0,0) → (315,406)
+  [71] Class: good            | Conf: 0.01 | BBox: (2,2) → (441,476)
+  [72] Class: bad             | Conf: 0.01 | BBox: (422,6) → (640,472)
+  [73] Class: bad             | Conf: 0.01 | BBox: (478,0) → (640,436)
+  [74] Class: good            | Conf: 0.01 | BBox: (304,221) → (640,479)
+  [75] Class: good            | Conf: 0.01 | BBox: (443,221) → (640,479)
+  [76] Class: bad             | Conf: 0.01 | BBox: (386,249) → (640,480)
+  [77] Class: good            | Conf: 0.01 | BBox: (8,0) → (557,390)
+  [78] Class: good            | Conf: 0.01 | BBox: (202,141) → (637,475)
+  [79] Class: bad             | Conf: 0.01 | BBox: (63,225) → (585,480)
+  [80] Class: good            | Conf: 0.01 | BBox: (84,180) → (605,480)
+  [81] Class: bad             | Conf: 0.01 | BBox: (85,202) → (243,479)
+  [82] Class: good            | Conf: 0.01 | BBox: (329,99) → (640,469)
+  [83] Class: good            | Conf: 0.01 | BBox: (403,4) → (640,476)
+  [84] Class: good            | Conf: 0.01 | BBox: (118,79) → (595,477)
+  [85] Class: good            | Conf: 0.01 | BBox: (75,91) → (458,479)
+  [86] Class: good            | Conf: 0.00 | BBox: (137,368) → (208,479)
+  [87] Class: bad             | Conf: 0.00 | BBox: (415,0) → (476,139)
+  [88] Class: good            | Conf: 0.00 | BBox: (110,288) → (209,479)
+  [89] Class: bad             | Conf: 0.00 | BBox: (136,368) → (208,479)
+  [90] Class: bad             | Conf: 0.00 | BBox: (415,0) → (457,42)
+  [91] Class: good            | Conf: 0.00 | BBox: (412,0) → (471,106)
+  [92] Class: good            | Conf: 0.00 | BBox: (416,0) → (451,37)
+  [93] Class: good            | Conf: 0.00 | BBox: (255,81) → (321,252)
+  [94] Class: good            | Conf: 0.00 | BBox: (0,4) → (39,277)
+  [95] Class: good            | Conf: 0.00 | BBox: (257,64) → (374,234)
+  [96] Class: good            | Conf: 0.00 | BBox: (0,0) → (36,183)
+  [97] Class: good            | Conf: 0.00 | BBox: (122,257) → (245,476)
+  [98] Class: good            | Conf: 0.00 | BBox: (259,83) → (351,268)
+  [99] Class: good            | Conf: 0.00 | BBox: (442,43) → (500,167)
+  [100] Class: good            | Conf: 0.00 | BBox: (256,75) → (397,255)
+  [101] Class: good            | Conf: 0.00 | BBox: (0,0) → (35,128)
+  [102] Class: good            | Conf: 0.00 | BBox: (625,391) → (639,478)
+  [103] Class: good            | Conf: 0.00 | BBox: (93,223) → (179,293)
+  [104] Class: bad             | Conf: 0.00 | BBox: (627,450) → (639,479)
+  [105] Class: good            | Conf: 0.00 | BBox: (621,71) → (640,280)
+  [106] Class: good            | Conf: 0.00 | BBox: (254,70) → (339,235)
+  [107] Class: good            | Conf: 0.00 | BBox: (0,21) → (32,312)
+  [108] Class: good            | Conf: 0.00 | BBox: (262,116) → (399,269)
+  [109] Class: bad             | Conf: 0.00 | BBox: (625,366) → (639,477)
+  [110] Class: bad             | Conf: 0.00 | BBox: (623,333) → (639,477)
+  [111] Class: good            | Conf: 0.00 | BBox: (0,3) → (65,274)
+  [112] Class: good            | Conf: 0.00 | BBox: (621,166) → (640,459)
+  [113] Class: good            | Conf: 0.00 | BBox: (169,0) → (303,80)
+  [114] Class: good            | Conf: 0.00 | BBox: (137,454) → (237,479)
+  [115] Class: good            | Conf: 0.00 | BBox: (92,221) → (201,330)
+  [116] Class: good            | Conf: 0.00 | BBox: (211,101) → (397,381)
+  [117] Class: good            | Conf: 0.00 | BBox: (0,43) → (30,403)
+  [118] Class: good            | Conf: 0.00 | BBox: (583,94) → (640,297)
+  [119] Class: good            | Conf: 0.00 | BBox: (626,112) → (639,232)
+  [120] Class: good            | Conf: 0.00 | BBox: (136,363) → (247,479)
+  [121] Class: good            | Conf: 0.00 | BBox: (0,28) → (51,312)
+  [122] Class: good            | Conf: 0.00 | BBox: (168,0) → (299,58)
+  [123] Class: good            | Conf: 0.00 | BBox: (262,50) → (458,231)
+  [124] Class: good            | Conf: 0.00 | BBox: (626,113) → (639,183)
+  [125] Class: good            | Conf: 0.00 | BBox: (622,283) → (639,478)
+  [126] Class: good            | Conf: 0.00 | BBox: (91,221) → (227,430)
+  [127] Class: good            | Conf: 0.00 | BBox: (129,0) → (262,357)
+  [128] Class: good            | Conf: 0.00 | BBox: (144,0) → (331,59)
+  [129] Class: good            | Conf: 0.00 | BBox: (165,0) → (324,209)
+  [130] Class: good            | Conf: 0.00 | BBox: (0,379) → (146,480)
+  [131] Class: good            | Conf: 0.00 | BBox: (445,84) → (500,168)
+  [132] Class: good            | Conf: 0.00 | BBox: (627,450) → (639,479)
+  [133] Class: good            | Conf: 0.00 | BBox: (571,468) → (637,479)
+  [134] Class: good            | Conf: 0.00 | BBox: (190,66) → (326,351)
+  [135] Class: good            | Conf: 0.00 | BBox: (172,0) → (310,162)
+  [136] Class: good            | Conf: 0.00 | BBox: (618,103) → (640,293)
+  [137] Class: good            | Conf: 0.00 | BBox: (257,20) → (428,241)
+  [138] Class: good            | Conf: 0.00 | BBox: (411,0) → (473,40)
+  [139] Class: good            | Conf: 0.00 | BBox: (614,188) → (640,299)
+  [140] Class: good            | Conf: 0.00 | BBox: (140,0) → (210,44)
+  [141] Class: good            | Conf: 0.00 | BBox: (132,6) → (288,322)
+  [142] Class: good            | Conf: 0.00 | BBox: (0,235) → (162,427)
+  [143] Class: good            | Conf: 0.00 | BBox: (0,294) → (174,468)
+  [144] Class: good            | Conf: 0.00 | BBox: (0,98) → (50,299)
+  [145] Class: good            | Conf: 0.00 | BBox: (611,196) → (640,448)
+  [146] Class: good            | Conf: 0.00 | BBox: (252,66) → (309,262)
+  [147] Class: bad             | Conf: 0.00 | BBox: (364,0) → (499,171)
+  [148] Class: good            | Conf: 0.00 | BBox: (141,0) → (312,99)
+  [149] Class: bad             | Conf: 0.00 | BBox: (167,0) → (305,85)
+  [150] Class: good            | Conf: 0.00 | BBox: (186,93) → (311,319)
+  [151] Class: good            | Conf: 0.00 | BBox: (568,33) → (639,292)
+  [152] Class: good            | Conf: 0.00 | BBox: (535,17) → (637,242)
+  [153] Class: good            | Conf: 0.00 | BBox: (0,132) → (30,462)
+  [154] Class: good            | Conf: 0.00 | BBox: (0,36) → (131,313)
+  [155] Class: good            | Conf: 0.00 | BBox: (0,109) → (25,428)
+  [156] Class: good            | Conf: 0.00 | BBox: (320,0) → (454,42)
+  [157] Class: good            | Conf: 0.00 | BBox: (87,172) → (184,317)
+  [158] Class: good            | Conf: 0.00 | BBox: (0,378) → (210,479)
+  [159] Class: good            | Conf: 0.00 | BBox: (85,95) → (191,360)
+  [160] Class: good            | Conf: 0.00 | BBox: (0,0) → (76,27)
+  [161] Class: good            | Conf: 0.00 | BBox: (420,42) → (501,169)
+  [162] Class: good            | Conf: 0.00 | BBox: (91,222) → (201,400)
+  [163] Class: good            | Conf: 0.00 | BBox: (65,0) → (230,40)
+  [164] Class: good            | Conf: 0.00 | BBox: (278,0) → (456,38)
+  [165] Class: good            | Conf: 0.00 | BBox: (87,66) → (227,364)
+  [166] Class: good            | Conf: 0.00 | BBox: (129,0) → (492,34)
+  [167] Class: good            | Conf: 0.00 | BBox: (6,0) → (162,32)
+  [168] Class: good            | Conf: 0.00 | BBox: (42,248) → (211,476)
+  [169] Class: bad             | Conf: 0.00 | BBox: (624,85) → (639,181)
+  [170] Class: good            | Conf: 0.00 | BBox: (567,416) → (639,479)
+  [171] Class: good            | Conf: 0.00 | BBox: (142,462) → (244,480)
+  [172] Class: good            | Conf: 0.00 | BBox: (607,205) → (640,353)
+  [173] Class: good            | Conf: 0.00 | BBox: (141,315) → (276,475)
+  [174] Class: good            | Conf: 0.00 | BBox: (522,0) → (639,110)
+  [175] Class: good            | Conf: 0.00 | BBox: (0,0) → (33,24)
+  [176] Class: good            | Conf: 0.00 | BBox: (140,0) → (180,121)
+  [177] Class: good            | Conf: 0.00 | BBox: (129,63) → (315,332)
+  [178] Class: good            | Conf: 0.00 | BBox: (2,0) → (96,132)
+  [179] Class: good            | Conf: 0.00 | BBox: (0,333) → (153,477)
+  [180] Class: good            | Conf: 0.00 | BBox: (0,408) → (142,480)
+  [181] Class: good            | Conf: 0.00 | BBox: (192,0) → (479,18)
+  [182] Class: good            | Conf: 0.00 | BBox: (116,0) → (483,59)
+  [183] Class: good            | Conf: 0.00 | BBox: (89,13) → (209,301)
+  [184] Class: bad             | Conf: 0.00 | BBox: (141,0) → (179,85)
+  [185] Class: good            | Conf: 0.00 | BBox: (309,0) → (471,71)
+  [186] Class: good            | Conf: 0.00 | BBox: (131,427) → (247,479)
+  [187] Class: good            | Conf: 0.00 | BBox: (591,376) → (639,478)
+  [188] Class: good            | Conf: 0.00 | BBox: (567,50) → (639,195)
+  [189] Class: good            | Conf: 0.00 | BBox: (0,123) → (136,304)
+  [190] Class: good            | Conf: 0.00 | BBox: (261,192) → (403,273)
+  [191] Class: good            | Conf: 0.00 | BBox: (63,0) → (196,34)
+  [192] Class: good            | Conf: 0.00 | BBox: (445,0) → (556,150)
+  [193] Class: good            | Conf: 0.00 | BBox: (94,188) → (233,392)
+  [194] Class: good            | Conf: 0.00 | BBox: (413,0) → (568,51)
+  [195] Class: good            | Conf: 0.00 | BBox: (180,0) → (406,132)
+  [196] Class: good            | Conf: 0.00 | BBox: (472,440) → (640,480)
+  [197] Class: good            | Conf: 0.00 | BBox: (7,433) → (171,480)
+  [198] Class: bad             | Conf: 0.00 | BBox: (571,447) → (639,479)
+  [199] Class: good            | Conf: 0.00 | BBox: (0,182) → (26,480)
+  [200] Class: good            | Conf: 0.00 | BBox: (164,24) → (290,173)
+  [201] Class: good            | Conf: 0.00 | BBox: (245,62) → (329,257)
+  [202] Class: good            | Conf: 0.00 | BBox: (507,0) → (635,30)
+  [203] Class: good            | Conf: 0.00 | BBox: (0,219) → (174,476)
+  [204] Class: good            | Conf: 0.00 | BBox: (0,212) → (140,349)
+  [205] Class: good            | Conf: 0.00 | BBox: (525,0) → (638,179)
+  [206] Class: good            | Conf: 0.00 | BBox: (269,133) → (440,317)
+  [207] Class: good            | Conf: 0.00 | BBox: (90,76) → (261,398)
+  [208] Class: good            | Conf: 0.00 | BBox: (0,14) → (100,259)
+  [209] Class: good            | Conf: 0.00 | BBox: (0,0) → (53,153)
+  [210] Class: good            | Conf: 0.00 | BBox: (329,45) → (475,228)
+  [211] Class: good            | Conf: 0.00 | BBox: (386,43) → (593,245)
+  [212] Class: good            | Conf: 0.00 | BBox: (156,13) → (288,266)
+  [213] Class: good            | Conf: 0.00 | BBox: (257,0) → (465,133)
+  [214] Class: good            | Conf: 0.00 | BBox: (63,13) → (193,291)
+  [215] Class: good            | Conf: 0.00 | BBox: (72,0) → (190,138)
+  [216] Class: good            | Conf: 0.00 | BBox: (118,6) → (237,361)
+  [217] Class: good            | Conf: 0.00 | BBox: (182,0) → (456,250)
+  [218] Class: bad             | Conf: 0.00 | BBox: (620,55) → (640,179)
+  [219] Class: good            | Conf: 0.00 | BBox: (268,114) → (487,358)
+  [220] Class: good            | Conf: 0.00 | BBox: (198,145) → (369,382)
+  [221] Class: good            | Conf: 0.00 | BBox: (0,378) → (100,480)
+  [222] Class: good            | Conf: 0.00 | BBox: (97,241) → (333,480)
+  [223] Class: good            | Conf: 0.00 | BBox: (92,224) → (183,353)
+  [224] Class: good            | Conf: 0.00 | BBox: (217,188) → (413,356)
+  [225] Class: good            | Conf: 0.00 | BBox: (125,440) → (206,479)
+  [226] Class: good            | Conf: 0.00 | BBox: (557,114) → (639,293)
+  [227] Class: good            | Conf: 0.00 | BBox: (3,403) → (190,480)
+  [228] Class: good            | Conf: 0.00 | BBox: (0,426) → (48,480)
+  [229] Class: good            | Conf: 0.00 | BBox: (278,97) → (477,289)
+  [230] Class: good            | Conf: 0.00 | BBox: (0,131) → (55,384)
+  [231] Class: good            | Conf: 0.00 | BBox: (44,0) → (170,39)
+  [232] Class: good            | Conf: 0.00 | BBox: (300,31) → (465,208)
+  [233] Class: good            | Conf: 0.00 | BBox: (7,446) → (206,480)
+  [234] Class: good            | Conf: 0.00 | BBox: (97,76) → (342,377)
+  [235] Class: good            | Conf: 0.00 | BBox: (91,1) → (235,268)
+  [236] Class: good            | Conf: 0.00 | BBox: (4,0) → (149,107)
+  [237] Class: good            | Conf: 0.00 | BBox: (0,192) → (132,319)
+  [238] Class: good            | Conf: 0.00 | BBox: (234,365) → (420,480)
+  [239] Class: good            | Conf: 0.00 | BBox: (0,167) → (71,437)
+  [240] Class: good            | Conf: 0.00 | BBox: (283,0) → (457,17)
+  [241] Class: good            | Conf: 0.00 | BBox: (423,0) → (619,35)
+  [242] Class: good            | Conf: 0.00 | BBox: (138,0) → (299,191)
+  [243] Class: good            | Conf: 0.00 | BBox: (60,73) → (183,352)
+  [244] Class: good            | Conf: 0.00 | BBox: (532,0) → (639,81)
+  [245] Class: good            | Conf: 0.00 | BBox: (95,0) → (223,339)
+  [246] Class: good            | Conf: 0.00 | BBox: (165,424) → (249,480)
+  [247] Class: good            | Conf: 0.00 | BBox: (0,270) → (42,472)
+  [248] Class: good            | Conf: 0.00 | BBox: (570,456) → (639,479)
+  [249] Class: good            | Conf: 0.00 | BBox: (381,4) → (508,216)
+  [250] Class: good            | Conf: 0.00 | BBox: (583,331) → (640,480)
+  [251] Class: good            | Conf: 0.00 | BBox: (256,171) → (444,360)
+  [252] Class: good            | Conf: 0.00 | BBox: (160,103) → (300,303)
+  [253] Class: good            | Conf: 0.00 | BBox: (176,464) → (250,480)
+  [254] Class: good            | Conf: 0.00 | BBox: (547,16) → (639,195)
+  [255] Class: good            | Conf: 0.00 | BBox: (0,0) → (97,83)
+  [256] Class: good            | Conf: 0.00 | BBox: (310,65) → (479,250)
+  [257] Class: good            | Conf: 0.00 | BBox: (448,0) → (636,126)
+  [258] Class: good            | Conf: 0.00 | BBox: (202,261) → (339,445)
+  [259] Class: good            | Conf: 0.00 | BBox: (151,464) → (364,480)
+  [260] Class: good            | Conf: 0.00 | BBox: (0,431) → (123,480)
+  [261] Class: good            | Conf: 0.00 | BBox: (161,0) → (461,97)
+  [262] Class: good            | Conf: 0.00 | BBox: (579,156) → (640,301)
+  [263] Class: good            | Conf: 0.00 | BBox: (220,373) → (376,480)
+  [264] Class: good            | Conf: 0.00 | BBox: (238,461) → (425,480)
+  [265] Class: good            | Conf: 0.00 | BBox: (0,327) → (86,473)
+  [266] Class: good            | Conf: 0.00 | BBox: (200,239) → (344,403)
+  [267] Class: good            | Conf: 0.00 | BBox: (295,0) → (456,53)
+  [268] Class: good            | Conf: 0.00 | BBox: (135,0) → (264,164)
+  [269] Class: good            | Conf: 0.00 | BBox: (533,0) → (639,24)
+  [270] Class: good            | Conf: 0.00 | BBox: (505,8) → (640,224)
+  [271] Class: good            | Conf: 0.00 | BBox: (76,0) → (190,96)
+  [272] Class: good            | Conf: 0.00 | BBox: (233,90) → (322,277)
+  [273] Class: good            | Conf: 0.00 | BBox: (525,0) → (639,56)
+  [274] Class: good            | Conf: 0.00 | BBox: (0,24) → (78,334)
+  [275] Class: good            | Conf: 0.00 | BBox: (300,0) → (460,26)
+  [276] Class: good            | Conf: 0.00 | BBox: (387,26) → (500,188)
+  [277] Class: good            | Conf: 0.00 | BBox: (169,16) → (313,356)
+  [278] Class: good            | Conf: 0.00 | BBox: (95,200) → (301,387)
+  [279] Class: good            | Conf: 0.00 | BBox: (1,110) → (172,247)
+  [280] Class: good            | Conf: 0.00 | BBox: (0,346) → (59,480)
+  [281] Class: good            | Conf: 0.00 | BBox: (0,15) → (109,355)
+  [282] Class: good            | Conf: 0.00 | BBox: (576,0) → (640,22)
+  [283] Class: good            | Conf: 0.00 | BBox: (228,20) → (373,260)
+  [284] Class: good            | Conf: 0.00 | BBox: (512,93) → (640,284)
+  [285] Class: good            | Conf: 0.00 | BBox: (203,202) → (406,390)
+  [286] Class: good            | Conf: 0.00 | BBox: (56,1) → (176,119)
+  [287] Class: good            | Conf: 0.00 | BBox: (529,335) → (640,480)
+  [288] Class: good            | Conf: 0.00 | BBox: (94,130) → (361,425)
+  [289] Class: good            | Conf: 0.00 | BBox: (160,268) → (323,431)
+  [290] Class: good            | Conf: 0.00 | BBox: (259,460) → (466,480)
+  [291] Class: good            | Conf: 0.00 | BBox: (0,440) → (104,480)
+  [292] Class: good            | Conf: 0.00 | BBox: (609,17) → (640,175)
+  [293] Class: good            | Conf: 0.00 | BBox: (485,406) → (640,480)
+
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:51:06
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.05
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:55:05
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.25
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:55:11
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.0
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 09:55:12
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.05
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 10:22:24
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.25
+============================================================
+[2026-04-08 10:22:30.204] พบ 1 วัตถุ:
+  [1] Class: good            | Conf: 0.26 | BBox: (107,188) → (136,229)
+
+[2026-04-08 10:22:35.596] พบ 1 วัตถุ:
+  [1] Class: good            | Conf: 0.28 | BBox: (562,357) → (582,385)
+
+[2026-04-08 10:22:46.621] พบ 1 วัตถุ:
+  [1] Class: good            | Conf: 0.31 | BBox: (622,156) → (640,177)
+
+
+============================================================
+Session เริ่มต้น: 2026-04-08 10:23:06
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.25
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 10:23:42
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.2
+============================================================
+
+============================================================
+Session เริ่มต้น: 2026-04-08 10:23:42
+Model: runs/detect/my_custom_model/weights/best.pt | Confidence: 0.1
+============================================================
+[2026-04-08 10:23:43.956] พบ 1 วัตถุ:
+  [1] Class: good            | Conf: 0.12 | BBox: (249,166) → (276,198)
+
+[2026-04-08 10:23:56.935] พบ 1 วัตถุ:
+  [1] Class: good            | Conf: 0.12 | BBox: (348,277) → (373,303)
+
+[2026-04-08 10:24:05.207] พบ 1 วัตถุ:
+  [1] Class: good            | Conf: 0.11 | BBox: (329,317) → (355,350)
+
+[2026-04-08 10:24:11.514] พบ 1 วัตถุ:
+  [1] Class: good            | Conf: 0.10 | BBox: (348,254) → (379,291)
+
+
+============================================================
+Session เริ่ม: 2026-04-08 10:53:07.360964
+============================================================
+[2026-04-08 10:53:41] พบ 2 วัตถุ:
+  [1] Class: good | Conf: 0.35 | BBox: (580,55) → (604,100)
+  [2] Class: good | Conf: 0.28 | BBox: (587,55) → (604,102)
+
+[2026-04-08 10:54:12] พบ 1 วัตถุ:
+  [1] Class: good | Conf: 0.44 | BBox: (70,141) → (91,169)
+
+
+Session จบ: 2026-04-08 10:54:48.422643
+รวม 2 ครั้ง
+============================================================
+
+============================================================
+Session เริ่ม: 2026-04-08 10:55:25.372549
+============================================================
+
+Session จบ: 2026-04-08 10:55:26.377233
+รวม 0 ครั้ง
+============================================================
+
+============================================================
+Session เริ่ม: 2026-04-08 10:55:34.899024
+============================================================
+
+Session จบ: 2026-04-08 10:55:35.902449
+รวม 0 ครั้ง
+============================================================
+
+============================================================
+Session เริ่ม: 2026-04-08 10:56:28.133422
+============================================================
+
+Session จบ: 2026-04-08 10:56:29.140707
+รวม 0 ครั้ง
+============================================================

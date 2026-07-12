@@ -1,0 +1,18 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+torch==2.1.2
+torchvision==0.16.2
+torchaudio==2.1.2
+
+streamlit==1.32.2
+ultralytics==8.0.230
+opencv-python==4.11.0.86
+streamlit-drawable-canvas==0.9.3
+pandas==2.3.1
+PyYAML==6.0.2
+Pillow==9.5.0
+numpy==1.26.4
+matplotlib==3.10.3
+tqdm==4.67.1
+yt-dlp==2025.12.8
+openpyxl==3.1.5
