@@ -1,0 +1,6 @@
+path: /Users/than-/Desktop/project_computer_vision/Project_Year_3/datasets_ready
+train: images/train
+val: images/val
+names:
+  0: Good
+  1: NG (NOT GOOD)

@@ -1,6 +1,7 @@
 import os
 
-BASE_DIR = os.getcwd()
+BASE_DIR = os.getcwd() # path ขึ้นอยู่กับตอนสั่ง run streamlit run app.py
+
 DATASET_DIR = os.path.join(BASE_DIR, "datasets")
 IMG_DIR = os.path.join(DATASET_DIR, "images")
 LABEL_DIR = os.path.join(DATASET_DIR, "labels")

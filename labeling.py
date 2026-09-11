@@ -5,9 +5,40 @@ def labeling_page():
     import hashlib
     import math
     from PIL import Image
-    from streamlit_drawable_canvas import st_canvas
+    import streamlit_drawable_canvas as drawable_canvas
     from config import IMG_DIR, LABEL_DIR
     from helpers.image_helper import transform_image
+
+    # streamlit-drawable-canvas 0.9.3 normally stores its background image in
+    # Streamlit's temporary /media cache. That cache can be cleared during a
+    # rerun while the browser still requests the old URL. Store canvas
+    # backgrounds under Streamlit's static directory instead so their URLs
+    # remain valid across reruns and image transformations.
+    static_canvas_dir = os.path.join(os.getcwd(), "static", "canvas_backgrounds")
+    os.makedirs(static_canvas_dir, exist_ok=True)
+
+    class CanvasStaticImageAdapter:
+        @staticmethod
+        def image_to_url(
+            image,
+            width,
+            clamp,
+            channels,
+            output_format,
+            image_id,
+        ):
+            image_hash = hashlib.sha256(image.tobytes()).hexdigest()
+            extension = output_format.lower()
+            static_name = f"{image_hash}.{extension}"
+            static_path = os.path.join(static_canvas_dir, static_name)
+
+            if not os.path.exists(static_path):
+                image.save(static_path, format=output_format)
+
+            return f"/app/static/canvas_backgrounds/{static_name}"
+
+    drawable_canvas.st_image = CanvasStaticImageAdapter
+    st_canvas = drawable_canvas.st_canvas
 
     CLASSES_FILE = "classes.txt"
     MAX_WIDTH = 1000
@@ -125,7 +156,9 @@ def labeling_page():
 
         file_bytes = uploaded_file.getvalue()
 
-        img_name = uploaded_file.name
+        # ป้องกัน file ทับกัน
+        original_img_name = os.path.basename(uploaded_file.name)
+        base_name, extension = os.path.splitext(original_img_name)
 
         orig_image = Image.open(uploaded_file).convert("RGB")
 
@@ -138,6 +171,22 @@ def labeling_page():
             contrast,
             color,
         )
+
+        # สร้าง signature จากค่าที่ีผลต่อภาพ
+        transform_signature = (
+            f"rotate={rotate_angle}|"
+            f"flip_h={flip_h}|"
+            f"flip_v={flip_v}|"
+            f"brightness={brightness}|"
+            f"contrast={contrast}|"
+            f"color={color}"
+        )
+
+        # Hash จากเนื้อหาไฟล์ต้นฉบับและ transformation
+        unique_hash = hashlib.sha256(
+            file_bytes + transform_signature.encode("utf-8")
+        ).hexdigest()[:10]
+        img_name = f"{base_name}_{unique_hash}{extension.lower()}"
 
         orig_w, orig_h = image.size
 
@@ -152,10 +201,8 @@ def labeling_page():
             new_w, new_h = orig_w, orig_h
             display_image = image
 
-        # สร้าง Key สำหรับ Canvas เพื่อให้วาดใหม่เมื่อเปลี่ยนรูป
-        hash_input = file_bytes + str(selected_idx).encode()
-        canvas_hash = hashlib.md5(hash_input).hexdigest()
-        canvas_key = f"canvas_{canvas_hash}"
+        # สร้าง Canvas ใหม่เมื่อเปลี่ยนรูปหรือ transformation
+        canvas_key = f"canvas_{unique_hash}_{selected_idx}"
 
         canvas = st_canvas(
             fill_color="rgba(0,150,255,0.2)",
@@ -215,18 +262,30 @@ def labeling_page():
 
                             # --- Rectangle → Seg format ---
                             if row.get("type") in ("rect", None) and pd.notna(row.get("left", None)):
+                                # แปลงขนาด
                                 w_box = row["width"] * row.get("scaleX", 1.0) / scale
                                 h_box = row["height"] * row.get("scaleY", 1.0) / scale
+
+                                # แปลงองศา (radian)
                                 angle = row.get("angle", 0)
                                 rad   = math.radians(angle)
+
+                                # แปลงตำแหน่งซ้ายบนเป็นพิกัดภาพจริง
                                 tl_x = row["left"] / scale
                                 tl_y = row["top"] / scale
+
+                                # หาจุดกึ่งกลางกรอบ
                                 cx = tl_x + (w_box / 2) * math.cos(rad) - (h_box / 2) * math.sin(rad)
                                 cy = tl_y + (w_box / 2) * math.sin(rad) + (h_box / 2) * math.cos(rad)
                                 w2, h2 = w_box / 2, h_box / 2
+
+                                # สร้างมุมทั้งสี่รอบจุดกึ่งกลาง
                                 corners = [(-w2, -h2), (w2, -h2), (w2, h2), (-w2, h2)]
+                                # หมุนมุมทั้งสี่
                                 rotated = [(cx + dx * math.cos(rad) - dy * math.sin(rad),
                                             cy + dx * math.sin(rad) + dy * math.cos(rad)) for dx, dy in corners]
+
+                                # ทำให้เป็น ค่า Normalize 0 - 1
                                 coords = " ".join(f"{x/orig_w:.6f} {y/orig_h:.6f}" for x, y in rotated)
                                 lines.append(f"{cid} {coords}")
 
@@ -234,6 +293,8 @@ def labeling_page():
                             elif "path" in row and row.get("path") is not None:
                                 try:
                                     path_data = row["path"]
+
+                                    # / scale --> แปลงกลับภาพจริง
                                     points = [(p[1] / scale, p[2] / scale) for p in path_data if len(p) >= 3 and p[0] in ("M", "L")]
                                     if len(points) < 3: continue
                                     coords = " ".join(f"{x/orig_w:.6f} {y/orig_h:.6f}" for x, y in points)
